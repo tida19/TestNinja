@@ -14,9 +14,8 @@ namespace TestNinja.Fundamentals
         {
             if (user.IsAdmin)
                 return true;
-
             if (MadeBy == user)
-                return false;
+                return true;
 
             return false;
         }
