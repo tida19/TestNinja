@@ -1,7 +1,6 @@
 ﻿using System;
 using TestNinja;
 using NUnit.Framework;
-using TestNinja.Fundamentals;
 using Math = TestNinja.Fundamentals.Math;
 
 namespace UnitTest.TestFundamentals
