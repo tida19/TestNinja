@@ -89,6 +89,7 @@
     <Compile Include="TestMocking\FakeFileReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestMocking\OrderServiceTests.cs" />
+    <Compile Include="TestMocking\ProductTests.cs" />
     <Compile Include="TestMocking\VideoServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
