@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TestNinja
 {
-    class Program
+    /*class Program
     {
         static void Main(string[] args)
         {
         }
-    }
+    }*/
 }
