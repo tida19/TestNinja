@@ -7,34 +7,28 @@ using System.Threading.Tasks;
 
 namespace TestNinja.Mocking
 {
+    
     public class EmployeeController
     {
-        private EmployeeContext _db;
+        private readonly IEmployeeStorage _storage;
 
-        public EmployeeController()
+        public EmployeeController(IEmployeeStorage storage)
         {
-            _db = new EmployeeContext();
+            _storage = storage;
         }
-
         public ActionResult DeleteEmployee(int id)
         {
-            var employee = _db.Employees.Find(id);
-            _db.Employees.Remove(employee);
-            _db.SaveChanges();
+            _storage.DeleteEmployee(id);
 
             return RedirectToAction("Employees");
         }
-
         private ActionResult RedirectToAction(string employees)
         {
             return new RedirectResult();
         }
     }
-
     public class ActionResult { }
-
     public class RedirectResult : ActionResult { }
-
     public class EmployeeContext
     {
         public DbSet<Employee> Employees { get; set; }
@@ -43,7 +37,6 @@ namespace TestNinja.Mocking
         {
         }
     }
-
     public class Employee
     {
     }
