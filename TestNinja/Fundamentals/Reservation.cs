@@ -8,21 +8,19 @@ namespace TestNinja.Fundamentals
 {
     public class Reservation
     {
-        public User Madeby { get; set; }
+        public User MadeBy { get; set; }
+
         public bool CanBeCancelledBy(User user)
         {
             if (user.IsAdmin)
                 return true;
 
-            if (Madeby == user)
-                return true;
+            if (MadeBy == user)
+                return false;
+
             return false;
         }
 
-        public object CanBeCancellBy(User user)
-        {
-            throw new NotImplementedException();
-        }
     }
 
     public class User
