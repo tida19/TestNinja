@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestNinja.Mocking
 {
-    
+
     public class EmployeeController
     {
         private readonly IEmployeeStorage _storage;
