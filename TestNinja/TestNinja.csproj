@@ -65,6 +65,7 @@
     <Compile Include="Mocking\VideoService.cs" />
     <Compile Include="Mocking\Program.cs" />
     <Compile Include="Fundamentals\Reservation.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
