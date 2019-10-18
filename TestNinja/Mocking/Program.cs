@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TestNinja.Mocking;
 
-namespace TestNinja
+namespace TestNinja.Mocking
 {
     public class Program
     {
