@@ -86,6 +86,7 @@
     <Compile Include="TestFundamentals\MathTests.cs" />
     <Compile Include="TestFundamentals\ReservationTests.cs" />
     <Compile Include="TestFundamentals\StackTests.cs" />
+    <Compile Include="TestMocking\BookingHelper_OverlappingBookingsExistTests.cs" />
     <Compile Include="TestMocking\EmployeeControllerTests.cs" />
     <Compile Include="TestMocking\FakeFileReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
