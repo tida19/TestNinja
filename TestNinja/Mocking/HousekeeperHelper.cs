@@ -27,7 +27,7 @@ namespace TestNinja.Mocking
             _emailSender = emailSender;
             _messageBox = messageBox;
         }
-        public bool SendStatementEmails(DateTime statementDate)
+        public void SendStatementEmails(DateTime statementDate)
         {
             var housekeepers = _unitOfWork.Query<Housekeeper>();
 
@@ -36,7 +36,7 @@ namespace TestNinja.Mocking
                 if (housekeeper.Email == null)
                     continue;
 
-                var statementFilename = SaveStatement(housekeeper.Oid, housekeeper.FullName, statementDate);
+                var statementFilename = _statementGenerator.SaveStatement(housekeeper.Oid, housekeeper.FullName, statementDate);
 
                 if (string.IsNullOrWhiteSpace(statementFilename))
                     continue;
@@ -55,8 +55,6 @@ namespace TestNinja.Mocking
                         MessageBoxButtons.OK);
                 }
             }
-
-            return true;
         }
 
         private static string SaveStatement(int housekeeperOid, string housekeeperName, DateTime statementDate)
