@@ -93,7 +93,7 @@
     <Compile Include="TestMocking\InstallerHelperTests.cs" />
     <Compile Include="TestMocking\OrderServiceTests.cs" />
     <Compile Include="TestMocking\ProductTests.cs" />
-    <Compile Include="TestMocking\UnitTests1.cs" />
+    <Compile Include="UnitTests1.cs" />
     <Compile Include="TestMocking\VideoServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
