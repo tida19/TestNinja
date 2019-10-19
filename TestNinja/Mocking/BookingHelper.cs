@@ -30,15 +30,18 @@ namespace TestNinja.Mocking
             return overlappingBooking == null ? string.Empty : overlappingBooking.Reference;
         }
     }
+    public interface IUnitOfWork
+    {
+        IQueryable<T> Query<T>();
+    }
 
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         public IQueryable<T> Query<T>()
         {
             return new List<T>().AsQueryable();
         }
     }
-
     public class Booking
     {
         public string Status { get; set; }
