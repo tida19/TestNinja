@@ -120,12 +120,19 @@ namespace UnitTest.TestMocking
         {
             _statementFileName = " ";
             _service.SendStatementEmails(_statementDate);
-            _emailSender.Verify(es => es.EmailFile(
+            VerifyEmailNotSent();
+        }
+        [Test]
+        public void SendStatmentEmail_EmailSendingFails_DisplayAMessageBox()
+        {
+            _emailSender.Setup(es => es.EmailFile(
                 It.IsAny<string>(),
                 It.IsAny<string>(),
                 It.IsAny<string>(),
-                It.IsAny<string>()),
-                Times.Never);
+                It.IsAny<string>()
+                )).Throws<Exception>();
+            _service.SendStatementEmails(_statementDate);
+            _messageBox.Verify(mb => mb.Show(It.IsAny<string>(), It.IsAny<string>(), MessageBoxButtons.OK));
         }
         private void VerifyEmailNotSent()
         {
