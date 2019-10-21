@@ -1,0 +1,13 @@
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\TestNinja.dll.config
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\TestNinja.dll
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\TestNinja.pdb
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\EntityFramework.dll
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\EntityFramework.xml
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\obj\Debug\TestNinja.csprojAssemblyReference.cache
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\obj\Debug\TestNinja.csproj.CopyComplete
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\obj\Debug\TestNinja.dll
+C:\Users\Nitro\Desktop\github2\TestNinja\TestNinja\obj\Debug\TestNinja.pdb
